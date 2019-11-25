@@ -43,7 +43,7 @@ lst_vault=[]
 ## Iterating "P" and extracting the vault name "val"
 for i in range(len(p)):
     val = p[i]["id"].split("/")[-1]
-    print("Secrets extracting from %s vault" %val)
+    #print("Secrets extracting from %s vault" %val)
     headers = {
         'Authorization': 'Bearer %s' %bearer_individual_vault_info_token,
         'Content-Type': 'application/json',
